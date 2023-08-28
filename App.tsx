@@ -7,8 +7,12 @@ import { SignIn } from './src/screens/SignIn';
 import { Loading } from './src/components/Loading';
 import { StatusBar } from 'react-native';
 
+import { IOS_CLIENT_ID } from '@env'
+
 export default function App() {
   const [fontLoaded] = useFonts({Roboto_400Regular, Roboto_700Bold })
+
+  console.log(IOS_CLIENT_ID)
 
   if(!fontLoaded) {
     return ( 
